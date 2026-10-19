@@ -44,7 +44,7 @@ jobs:
       - id: policy
         name: Enforce immutable actor and fork policy
         if: github.event_name != 'merge_group'
-        uses: qwts/qwts-agent-ci/.github/actions/ci-policy@3a5617b287d922e37f262210a1d8750d8217b56d
+        uses: qwts/qwts-agent-ci/.github/actions/ci-policy@87c6b301057992f79a723f63c64624bf40c9d06a
         env:
           CI_POLICY_ACTOR: ${{ github.actor }}
           CI_POLICY_TRIGGERING_ACTOR: ${{ github.triggering_actor }}
@@ -133,7 +133,7 @@ jobs:
           node-version: 24
           cache: npm
       - name: Install locked dependencies
-        uses: qwts/qwts-agent-ci/.github/actions/bounded-command@3a5617b287d922e37f262210a1d8750d8217b56d
+        uses: qwts/qwts-agent-ci/.github/actions/bounded-command@87c6b301057992f79a723f63c64624bf40c9d06a
         with:
           task: Install locked dependencies
           executable: npm
@@ -176,7 +176,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           repository: qwts/qwts-agent-ci
-          ref: 3a5617b287d922e37f262210a1d8750d8217b56d
+          ref: 87c6b301057992f79a723f63c64624bf40c9d06a
           path: .ci-runtime-policy
           sparse-checkout: tools/ci-runtime
           persist-credentials: false
