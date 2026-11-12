@@ -22,7 +22,7 @@
     "@modelcontextprotocol/sdk": "^1.32.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "zod": "^4.3.6"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/node": "^24.10.13",
@@ -31,7 +31,7 @@
     "@vitejs/plugin-react": "^5.1.4",
     "esbuild": "^0.28.1",
     "typescript": "^5.9.3",
-    "vite": "^7.3.1"
+    "vite": "^7.3.8"
   },
   "allowScripts": {
     "esbuild@0.28.1": true
